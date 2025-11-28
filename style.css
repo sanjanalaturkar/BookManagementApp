@@ -1,0 +1,195 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header/Navigation */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.primary-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #0056b3;
+}
+
+.secondary-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #5a6268;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    font-size: 0.9em;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Home Page Specific */
+.home-page {
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.home-page h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #007bff;
+}
+
+/* Form Styling (admin.html) */
+#addBookForm div {
+    margin-bottom: 15px;
+}
+
+#addBookForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#addBookForm input[type="text"],
+#addBookForm select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Options Section */
+.options-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.filter-option select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Book Grid Layout */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
+/* Book Card Styling */
+.book-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    /* Good minimal style with box shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #007bff;
+}
+
+.book-card p {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+
+.book-card p strong {
+    font-weight: 600;
+}
+
+.book-card .delete-button {
+    margin-top: 10px;
+    align-self: stretch; /* Make the button full width of the card padding */
+}
+
+/* Separator */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
